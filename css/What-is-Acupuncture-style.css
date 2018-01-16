@@ -1,0 +1,405 @@
+<style>  
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+body {
+    background-color: white; 
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Font *************************/
+p strong{
+    font-size: 1.7em;
+}
+
+.big-font{
+    font-family: sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');  
+/*      font-family: 'Slabo 27px', serif; */
+ 
+/*font-family: 'Lobster', cursive;*/
+
+
+/**************** End Font *************************/
+
+
+
+
+/**************** Responsive Design *************************/
+ 
+@media screen and (min-width: 948px) and (max-width:1368px) {
+        .logo-description>p{
+            font-size: 6em !important;
+             
+        }
+   
+}
+      
+@media screen and (min-width: 768px) and (max-width:948px) {
+/* Change Breakpoint for nav*/
+   .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+/* Change Breakpoint for nav*/
+ 
+ 
+}
+
+    @media screen and  (min-width: 420px) and (max-width: 768px){
+        
+        .logo-description>p{
+            font-size: 3.5em !important;
+        }
+ 
+     }
+
+/* Smartphones (portrait) ----------- */
+
+@media screen and (min-width: 321px) and (max-width: 420px){
+    .logo-description>p{
+        font-size: 2.5em !important;
+    }
+ 
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 321px) {
+    .logo-description>p{
+        font-size: 2.5em !important;
+      
+    }
+  
+}
+/**************** End Responsive Design *************************/
+
+
+/*************    Animation   ************************/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+
+/* created an animation effect which will slide in elements on scroll. If you want to use it, just add the .slideanim class to the element you want to slide in, and add the following to your CSS and jQuery (feel free to modify the duration, opacity, where to start, when to slide in, and so on).
+*/
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/********************** End Animation **********************/
+
+/*************    Navigation Bar   ************************/
+    .navbar {                           /* Main navigation bar*/
+        background-position: right;
+        background-color: #c7df60;
+        position: sticky;
+        top: 0;
+        margin: 0 0;
+        height: 3.9em;
+        border-style: none;
+        z-index: 100;
+    }
+
+    .navbar-header{ /* Button area symbol */
+        border-style: none;
+        background-color: #c7df60;
+    } 
+ 
+/*    Style of Buttons    */
+    .navbar-inverse .navbar-nav>li>a{
+        text-align: center;
+        font: normal bold 1.5em arial;      /*Font of the words*/
+        color: #474812;
+    }
+ 
+ 
+    nav ul li a:hover {
+        background: #70BA16;
+        background: -webkit-gradient(linear, left bottom, left top, from(#70BA16), to(#70BA16));
+        background: -moz-linear-gradient(bottom, #70BA16, #70BA16);
+        background: linear-gradient(to bottom, #70BA16, #70BA16);
+    }
+      nav ul li a:active{
+        background: #EBD73F;
+        background: -webkit-gradient(linear, left bottom, left top, from(#EBD73F), to(#EBD73F));
+        background: -moz-linear-gradient(bottom, #EBD73F, #EBD73F);
+        background: linear-gradient(to bottom, #EBD73F, #EBD73F);
+      }
+    
+      
+/*     Color of the button box*/
+      button.navbar-toggle, button.navbar-toggle:hover, button.navbar-toggle:checked, button.navbar-toggle:default{
+          background-color: #58a758;
+          border: none;
+          
+      }
+      
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background-color: #70ba16c7; /* change color of the toggle */
+ 
+    }
+
+     .navbar-collapse, .navbar-form {
+        border: none;
+    }
+
+
+      
+      .navbar-inverse .navbar-nav>.active>a{
+          background-color: rgba(118, 158, 56, 2.0);
+          padding-bottom: auto;
+          background-color: none;
+  
+      }
+      
+      .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+          background-color: rgba(118, 158, 56, 2.0);    /*Change color when hover over the button*/
+      }
+  
+      div#myNavbar.navbar-collapse.collapse.in{
+            background: #eef2b8aa;      /* Background of the collapsed area */
+      
+      }
+ 
+     /* style for the small word logo*/
+/*
+        .navbar-brand{
+            font-size: 3em;
+            text-shadow: 0 0 0.7em darkgreen;
+            text-decoration: underline;
+            font-family: 'Risque', cursive;
+            color: #292d0a;
+        }
+*/
+ 
+
+     
+/*************    End Navigation Bar   ************************/
+    
+
+   
+      
+/*************    Logo   ************************/
+.wrapper-bg{
+    background-color: #c7df60;
+}
+.logo-area{
+    background-color: #c7df60;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e3e4b5), to(#c7e05f));
+    background: -moz-linear-gradient(bottom, #e3e4b5, #c7e05f);
+    background: linear-gradient(to top, #e3e4b5, #c7e05f);
+
+    clear: left;
+
+    padding-top: 0.5em;
+}
+
+
+.logo-description>p{  
+    font-size: 5em;
+    font-family: 'Kaushan Script', 'Berkshire Swash', sans-serif;
+    color: #c56943;
+}     
+/*************    End Logo   ************************/
+      
+      
+/*************    What is Acupuncture   ************************/
+/*header*/
+.what-acupuncture-header-bg{
+    background-image: url("../Images/lotus-background.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+.what-acupuncture-font{
+    margin: 0;
+    font-size: 2em;
+    font-family:  'Lobster', serif;
+    color: #b733a8;
+/*    text-shadow:  0 0 0.9em #819c3e;*/
+}
+ 
+.firstcharacter{
+    font-size: 2.5em;
+    font-family: 'Lobster', sans-serif;
+/* initial-letter: 3;*/
+}
+/*End header*/
+.what-acupucnture-background{
+/*    background-color: #83bcffd1;*/
+        background-color: #ffd990;
+     background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
+    background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
+    background: -o-linear-gradient(bottom, #e1ba61, #ffebae);
+    background: linear-gradient(to top, #e1ba61, #ffebae);
+    box-shadow: -2px -2px 10px #0a10143d;
+    box-sizing: border-box;
+    padding: 2em;
+    color: black;
+}
+
+.acupucnture-def-img{
+    margin: 30px;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px 2px #858484;
+}
+ 
+
+
+.acupucnture-def-img:hover {
+    box-shadow: 0 0 5px 3px rgba(0, 140, 186, 0.5);
+}
+
+.img-wrapper{
+    position: sticky;
+    top: 100px;
+}
+
+
+
+.duplicate-container{
+    visibility: hidden;
+    margin: -13em;
+}
+/*************    End What is Acupuncture   ************************/
+
+/************************* Footer *****************/
+footer{
+    background-color: #8dca8d;
+/*    background-color: #64c864;*/
+    border-top-style: ridge;
+    border-top-width: 12px;
+    border-top-color: #91d091f0;
+}
+.glyphicon-chevron-up{
+    
+    color: #839f3f;
+    font-size: 1.5em;
+}
+.glyphicon-chevron-up:hover{
+    color:#a0cc34;
+    font-size: 2em;
+}
+
+footer ul li{
+    font-size: 1.2em;
+    font-family: serif;
+    list-style-type: none;  /* turn off bullets points */
+}
+
+#footer-navigation{     /* Change the style of the link at footer */
+    color: #045194;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+  #footer-navigation:hover{
+    color: #040c13;     /**Set the color of the navigation at footer**/
+}
+
+.contactus-description{
+    font-family: 'Lobster', cursive;
+    color:  #000000;
+    font-size: 2em;
+}
+
+.fa-facebook-square{
+    font-size: 2.2em;
+    color: #1c3b84;
+    padding: 0 3px;
+}
+.fa-facebook-square:hover, .fa-facebook-square:focus{
+    font-size: 2.5em;
+    color: #3963c5;
+}
+.fa-youtube{
+    font-size: 2.2em;
+    color: #ad1d1d;
+    padding: 0 3px;
+}
+
+.fa-youtube:hover, .fa-youtube:focus{
+    font-size: 2.5em;
+    color: #d14949;
+}
+ 
+#linkin{
+    color: #152388;
+/*    text-decoration: underline;*/
+}
+
+#linkin:hover{
+    color: #040c13;     /**Set the linkin when mouse hovers **/
+}
+
+.footer-loc-time-description{
+    font-weight: 100;
+    font-size: 1.6em;
+    font-family: serif;
+    color: #6d0808;
+}
+/************************* End Footer *****************/
+
+</style>
