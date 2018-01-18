@@ -134,6 +134,13 @@ p strong{
     .font-sm-bigger{
         font-size: 0.7em !important;
     }
+    
+    .big-font{
+        font-size: 0.5em;   
+    }
+    .item h4{
+        font-size: 0.6em !important;
+    }
 }
 /**************** End Responsive Design *************************/
 
@@ -449,7 +456,7 @@ div.goal-container{
 }
 
 .item h4 {
-    font-size: 19px;
+    font-size: 1.4em;
     line-height: 1.375em;
     font-weight: 400;
     font-style: italic;
@@ -461,10 +468,6 @@ div.goal-container{
 }
 
  
-.item h4{
-    font-size: 1.9em;
-/*    padding: 1em;*/
-}
 .customer-say-section>h2{
     font-size: 3.5em;
     font-family: serif;

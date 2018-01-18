@@ -94,6 +94,10 @@ p strong{
     .logo-description>p{
         font-size: 2.5em !important;
     }
+    
+    .big-font{
+        font-size: 1.2em;   
+    }
  
 }
 /**************** End Responsive Design *************************/

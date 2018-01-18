@@ -102,6 +102,11 @@ p strong{
         font-size: 2.5em !important;
       
     }
+    
+    .big-font{
+        font-size: 1em;   
+    }
+ 
   
 }
 /**************** End Responsive Design *************************/

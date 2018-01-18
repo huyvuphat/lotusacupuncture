@@ -111,6 +111,9 @@ p strong{
         height: 8em;
         width: 12em;
     }
+    .big-font{
+        font-size: 1em;   
+    }
 }
 /**************** End Responsive Design *************************/
 

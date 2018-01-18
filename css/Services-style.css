@@ -13,7 +13,7 @@ p strong{
 
 .big-font{
     font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -99,10 +99,16 @@ p strong{
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 321px) {
+    .table, tr, th, td {
+        font-size: 1.05em !important;    
+    }
     .logo-description>p{
         font-size: 2.5em !important;
     }
- 
+   .big-font{
+        font-size: 1em !important;   
+    }
+  
 }
 /**************** End Responsive Design *************************/
 
@@ -277,6 +283,7 @@ p strong{
     font-size: 2em;
     font-family:  'Lobster', serif;
     color: #b733a8;
+    
 /*    text-shadow:  0 0 0.9em #819c3e;*/
 /*    padding-top: 20em;*/
 }
