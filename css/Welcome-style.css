@@ -124,9 +124,7 @@ p strong{
         padding-right: 4px;
     }
  
-    .welcome-font{
-        font-size: 50px !important;
-    }
+  
     
     .font-lg-bigger{
         font-size: 1.5em !important;
@@ -140,6 +138,9 @@ p strong{
     }
     .item h4{
         font-size: 0.6em !important;
+    }
+  .welcome-font{
+        font-size: 0.9em !important; 
     }
 }
 /**************** End Responsive Design *************************/
@@ -371,7 +372,7 @@ background-color: #ffd990;
 }
 .welcome-font{
     margin: 0;
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-family:  'Lobster', serif;
     color: #c56943;
     padding-bottom: 0.5em;
