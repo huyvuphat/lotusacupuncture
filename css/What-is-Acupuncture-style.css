@@ -8,13 +8,13 @@ body {
 
 /**************** Font *************************/
 p strong{
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 
 .big-font{
     font-family: sans-serif;
     font-size: 1.4em;
-    line-height: 1.5em;
+      line-height: 1.5em;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');  

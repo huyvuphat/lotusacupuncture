@@ -8,15 +8,14 @@ body {
 
 /**************** Font *************************/
 p strong{
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .big-font{
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.5em;
 }
-
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');  
 /*      font-family: 'Slabo 27px', serif; */
  
@@ -298,11 +297,8 @@ p strong{
 div.service-first-description{
     padding-top: 2em;
     padding-bottom: 2em;
-/*    background-color: #e4d06fd1;*/
     box-shadow: -2px -2px 10px #0a10143d;
     box-sizing: border-box;
-/*    padding: 2em;*/
-/*    margin-bottom: 2em;*/
 }
 
 div.service-sec-description{
@@ -384,9 +380,11 @@ table, tr, th, td {
 /*    margin-bottom: 20px;*/
 /*    text-shadow:  0 0 0.9em #819c3e;*/
 }
+/*
 .treatment-small-font{
     font-size: 1.4em;
 }
+*/
 
 .duplicate-container{
     visibility: hidden;
