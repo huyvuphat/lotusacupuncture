@@ -2,7 +2,7 @@
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 body {
     background-color: white; 
-    font-family: serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,6 +17,7 @@ p strong{
       line-height: 1.5em;
 }
 
+
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');  
 /*      font-family: 'Slabo 27px', serif; */
  
@@ -27,29 +28,12 @@ p strong{
 
 
 /**************** Responsive Design *************************/
-@media screen and  (min-width: 1368px){
-    .font-lg-bigger{
-        font-size: 4em !important;
-    }
-    .font-sm-bigger{
-        font-size: 1.5em;
-    }
-        .logo-description>p{
-            font-size: 6em !important;
-             
-        }
-}
+ 
 @media screen and (min-width: 948px) and (max-width:1368px) {
         .logo-description>p{
             font-size: 6em !important;
              
         }
-       
-    #myCarousel.carousel{ 
-        max-width: 60em !important;    
-        /******* Depends on the Quality of the Image, set to appropriate width *******/    
-    }
-    
 
 }
       
@@ -90,15 +74,16 @@ p strong{
   		display:block !important;
 	}
 /* Change Breakpoint for nav*/
- 
     
+ 
 }
 
     @media screen and  (min-width: 420px) and (max-width: 768px){
+  
         .logo-description>p{
-            font-size: 3.5em !important;            
+            font-size: 3.5em !important;
         }
- 
+     
      }
 
 /* Smartphones (portrait) ----------- */
@@ -107,43 +92,22 @@ p strong{
     .logo-description>p{
         font-size: 2.5em !important;
     }
-    .font-lg-bigger{
-        font-size: 2em !important;
-    }
-    .font-sm-bigger{
-        font-size: 1em !important;
-    }
-
+ 
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 321px) {
     .logo-description>p{
-        font-size: 2em !important;
-        padding-left: 4px;
-        padding-right: 4px;
-    }
- 
-  
-    
-    .font-lg-bigger{
-        font-size: 1.5em !important;
-    }
-    .font-sm-bigger{
-        font-size: 0.7em !important;
+        font-size: 2.5em !important;
     }
     
     .big-font{
         font-size: 0.5em;   
     }
-    .item h4{
-        font-size: 0.6em !important;
-    }
-  .welcome-font{
-        font-size: 0.9em !important; 
-    }
+ 
 }
 /**************** End Responsive Design *************************/
+
 
 /*************    Animation   ************************/
 .slideanim {visibility:hidden;}
@@ -187,8 +151,8 @@ p strong{
 /********************** End Animation **********************/
 
 /*************    Navigation Bar   ************************/
- 
     .navbar {                           /* Main navigation bar*/
+        background-position: right;
         background-color: #c7df60;
         position: sticky;
         top: 0;
@@ -259,13 +223,21 @@ p strong{
       
       }
  
+     /* style for the small word logo*/
+/*
+        .navbar-brand{
+            font-size: 3em;
+            text-shadow: 0 0 0.7em darkgreen;
+            text-decoration: underline;
+            font-family: 'Risque', cursive;
+            color: #292d0a;
+        }
+*/
+ 
 
      
 /*************    End Navigation Bar   ************************/
-    
 
-
-   
       
 /*************    Logo   ************************/
 .wrapper-bg{
@@ -287,232 +259,204 @@ p strong{
         font-size: 5em;
         font-family: 'Kaushan Script', 'Berkshire Swash', sans-serif;
         color: #c56943;
-        margin: 0;
     }
       
 /*************    End Logo   ************************/
-      
-      
 
-
-/*************    Carousel   ************************/
  
-div.background-for-carousel{
-    background:rgba(210, 226, 178, 3.8); 
+      
+ 
+
+
+
+
+/*************    Gallery   ************************/
+.header-bg{
     background-image: url("../Images/lotus-background.jpg");
-
+    background-repeat:no-repeat;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
-/*    z-index: -100;*/
-
+    padding: 50px;
 }
- 
-#myCarousel.carousel{
-    background:  rgba(210, 226, 178, 3.8); 
-    margin: 0 auto;
-    padding: 0;
-    max-width: 70em;    
-    /******* Depends on the Quality of the Image, set to appropriate width *******/    
+.header-font{
+    margin: 0;
+    font-size: 2em;
+    font-family:  'Lobster', serif;
+    color: #b733a8;
+/*    text-shadow:  0 0 0.9em #819c3e;*/
 }
-.carousel-caption>h1{
-   font-size: 2.6em;
-   font-family: 'Berkshire', sans-serif;
-
-}
-.main-carousel-inner > .item {
-/*    position: relative;*/
-/*    display: none;*/
-    -webkit-transition: 0.1s ease-in-out left;
-    -moz-transition: 0.1s ease-in-out left;
-    -o-transition: 0.1s ease-in-out left;
-    transition: 0.1s ease-in-out left;
-}
-/*************    End Carousel   ************************/  
-    
-/*************    Schedule   ************************/
-
- 
- 
-.schedule-container{
-background-color: #ffd990;
-     background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
-    background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: -o-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: linear-gradient(to top, #e1ba61, #ffebae);
-    box-shadow: -2px -2px 10px #0a10143d;
-    box-sizing: border-box;
-    padding: 2em;
-}
-
-.what-acupucnture-background{
+/*End header*/
+.gallery-background{
 /*    background-color: #83bcffd1;*/
+
     background-color: #ffd990;
-     background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
-    background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: -o-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: linear-gradient(to top, #e1ba61, #ffebae);
-    box-shadow: -2px -2px 10px #0a10143d;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#c9a643));
+    background: -moz-linear-gradient(bottom, #e1ba61, #c9a643);
+    background: -o-linear-gradient(bottom, #e1ba61, #c9a643);
+    background: linear-gradient(to top, #e1ba61, #c9a643);
+
+    box-shadow: -5px -5px 15px 2px #c4bcbc
     box-sizing: border-box;
-    padding: 2em;
+    padding:1em;
     color: black;
 }
- 
 
-
-/*************  End  Schedule   ************************/
-
-.welcome-bg{
-    background-color: #d4e48e; 
-  
-    padding-top: 3em;
-    padding-bottom: 3em;
-    box-shadow: -2px -2px 10px #0a10143d;
-    
-}
-.welcome-font{
-    margin: 0;
-    font-size: 2.2em;
-    font-family:  'Lobster', serif;
-    color: #c56943;
+.images-container{
+/*    padding-top: 0.5em;*/
     padding-bottom: 0.5em;
- 
-}
-.bold{
-    font-weight: bold;
-}
- 
-
-/*************** Goal ************************/
-
-div.goal-container{
-    background-color: rgba(210, 226, 178, 3.8); 
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(210, 226, 178, 3.8)), to(rgba(118, 158, 56, 2.0)));
-    background: -moz-linear-gradient(bottom, rgba(210, 226, 178, 3.8), rgba(118, 158, 56, 2.0));
-    background: -o-linear-gradient(bottom, rgba(210, 226, 178, 3.8), rgba(118, 158, 56, 2.0));
-    background: linear-gradient(to top, rgba(210, 226, 178, 3.8), #6fc14e);
-    padding-top: 3em;
-    box-shadow: -2px -2px 10px #0a10143d;
-
-}
-      
-.leading-jumpotron{
-/*    background-image: url("");*/
-/*          background-repeat: no-repeat;*/
-/*          background-size: cover;*/
-    height: 40em;
-    padding: 20px;
-    margin: 0;
-}
-#page-info{
-
-    background-color: aqua;
-    border: solid;
-    border-color: red;
 }
 
-#inner-page-info{
-    background-color: black;
-    border: solid;
-    border-color: red;
-}
-
- 
-.additional-info>div{
-    text-indent: 50px;
-    /*    padding-top: 1em;*/
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family:  sans-serif;
-        font-style: normal;
-    /*        font-weight: 400;*/
-        font-size: 1.8em;
-    /*    background: gray;*/
+a img{
+    margin-top: 2em;
+    box-shadow: 3px 5px 10px 2px gray;
 }
  
-/*************    End Goal   ************************/
 
-/*************** weightlosss ************************/
 
-.weightloss-container{
-    background-color: #f8dc56; 
-    padding-top: 0;
-    box-shadow: -2px -2px 10px #0a10143d;
-    font-family: sans-serif;
-
+a img:hover {
+    -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+    -moz-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+    filter: brightness(80%);
+     -webkit-animation: bigger  0.5s; /* Safari 4.0 - 8.0 */
+    -moz-animation: bigger  0.5s; /* Safari 4.0 - 8.0 */
+    animation: bigger 0.5s;
 }
-.weightloss-container div h2{
-    font-size: 3.5em;
-    font-weight: bold;
-    padding-top: 0;
-/*    padding-bottom: 0;*/
-    margin-bottom: 0;
-    font-style: normal;
-    font-family: serif;
-}
-.weightloss-container div div h3{
-    font-size: 1.8em;
-    font-weight: bold;
+a img:active{
     
+     -webkit-animation: Xbigger  0.5s; /* Safari 4.0 - 8.0 */
+    -moz-animation: Xbigger  0.5s; /* Safari 4.0 - 8.0 */
+    animation: Xbigger 0.5s;
+    z-index: 500;
 }
-.weightloss-container div div p{
-    font-size: 1.5em;
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
+
+@-moz-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
+
+/* Standard syntax */
+@keyframes bigger {
+   from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
+
+@-webkit-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
+
+@-moz-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
+
+/* Standard syntax */
+@keyframes bigger {
+   from{transform: scale(1);}
+    to{transform: scale(1.1)}
+}
     
-}
- 
- 
-/*************    End weightlosss   ************************/
-/*************    Customers Say   ************************/
-.customer-say-section{
-    border-top-style: solid;
-    border-top-width: 7px;
-    border-top-color: #269426;
-/*    border-bottom-style: solid;*/
-/*    border-bottom-color: #269426;*/
-/*    border-bottom-width: 7px;*/
-    background: #d4e48e;
-}
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #289b2e;
+.img-wrapper{
+    position: sticky;
+    top: 100px;
 }
 
-.carousel-indicators li {
-    border-color: #289b2e;
-}
 
-.carousel-indicators li.active {
-    background-color: #289b2e;
-}
 
-.item h4 {
-    font-size: 1.4em;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-}
-
-.item span {
-    font-style: normal;
+.duplicate-container{
+    visibility: hidden;
+    margin: -13em;
 }
 
  
-.customer-say-section>h2{
-    font-size: 3.5em;
-    font-family: serif;
+.video div{
+     padding: 2em;
+}
+
+/**********MODAL *****************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.zoom-pic { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    z-index: 500;
+/*    margin: auto;*/
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(2)}
+}
+
+/* The Close Button */
+/*
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
     font-weight: bold;
-    padding-top: 0.5em;
-/*    padding-bottom: 0;*/
-    margin-bottom: 0;
-        font-style: normal;
+    transition: 0.3s;
+    z-index: 500;
 }
 
- 
-/************* End Customers Say   ************************/
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
 
-
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .zoom-pic {
+        width: 100%;
+        
+    }
+}
+/*************    End Gallery   ************************/
 /************************* Footer *****************/
 footer{
     background-color: #8dca8d;

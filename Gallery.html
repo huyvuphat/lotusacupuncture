@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Lightbox-->
+<link rel="stylesheet" type="text/css" href="lightbox.css">
+<script type="text/javascript" src="lightbox.js"></script>
+ 
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
+<!--    Link Font Awaresome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+<!--    brand logo font-->
+<!--Link to CSS-->
+<link rel="stylesheet" type="text/css" href="./css/Gallery-style.css">
+ </head>
+<body>
+
+<!--    Navigation  -->
+<div class="wrapper-bg">
+<div class=" logo-area text-center">
+    <div class="row" style="height: 10em; width: 15em; margin: 0 auto;">   
+        <img class="logo-img "  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" width="100%">
+    </div>
+    <div class="container">
+        <div class="text-center logo-description">
+            <p>Lotus Acupuncture Clinic <span class="small-llc" style="font-size: 0.3em;">LLC</span></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<nav class="navbar navbar-inverse ">
+    <div class="container-fluid navigation-container" style="padding-right: 15px;padding-left: 0px;">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+<!--        <span class="icon-bar"></span>-->
+<!--        <span class="icon-bar"></span>-->
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="What-is-Acupuncture.html">Acupuncture</a></li>
+        <li><a href="Services.html">Services &amp; Fees</a></li>
+        <li><a href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
+        <li><a href="FQA.html">FAQ</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li class="active"><a href="Gallery.html">Gallery</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--   End  Navigattion  -->
+     
+<!--    Lightbox   -->
+<p class="header-font header-bg text-center"><strong>Images</strong></p>
+    
+<div class="gallery-background ">
+    <div class="row images-container">
+        <div class="text-center word-wrapper">
+<!-- Images used to open the lightbox -->
+        <div class="col-sm-offset-3 col-sm-3 slideamin"> 
+            <a data-lightbox="mygallery" data-title="My caption"><img onclick="toggleBig();" class="d-block"  src="./Images/galleryImages/outside1.jpg"  height="300em" width="100%"></a>
+            
+        </div>
+        <div class="col-sm-3"> 
+            <a   data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/outside2.jpg"  height="300em" width="100%"></a>
+        </div>
+       
+        </div>
+    </div>
+        <div class="row images-container">
+        <div class="text-center word-wrapper">
+<!-- Images used to open the lightbox -->
+         <div class="col-sm-offset-2 col-sm-3"> 
+            <a  data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside1.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside2.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside3.jpg" height="300em" width="100%"></a>
+        </div>
+        </div>
+    </div> 
+    
+    <div class="row images-container">
+        <div class="text-center word-wrapper">
+<!-- Images used to open the lightbox -->
+        <div class="col-sm-offset-2 col-sm-3"> 
+            <a  data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside4.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a  data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside5.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a  data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside6.jpg"  height="300em" width="100%"></a>
+        </div>
+        </div>
+    </div> 
+    <div class="row images-container">
+    <div class="text-center word-wrapper">
+<!-- Images used to open the lightbox -->
+        <div class="col-sm-offset-2 col-sm-3"> 
+            <a   data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside7.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside8.jpg"  height="300em" width="100%"></a>
+        </div>
+        <div class="col-sm-3"> 
+            <a data-lightbox="mygallery" data-title="My caption"><img class="d-block"  src="./Images/galleryImages/inside9.jpg"  height="300em" width="100%"></a>
+        </div>
+        </div>
+    </div> 
+</div>
+<p class="header-font header-bg text-center"><strong>Videos</strong></p>
+    
+<div class="gallery-background ">
+ <div class="text-center video row">
+     
+     <div class="col-lg-5 col-lg-offset-1">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/6Ferg--BSpM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+     <div class="col-lg-5 ">
+
+         <iframe width="100%" height="350" src="https://www.youtube.com/embed/tjfhKGFthIw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+ 
+     
+<!--
+    </div>
+     <div class="text-center video row">
+     
+     <div class="col-lg-4 col-lg-offset-2">
+        <iframe width="100%" height="345" frameborder="0"  src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    </div>
+     <div class="col-lg-4 ">
+        <iframe width="100%" height="345" frameborder="0"  src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    </div>
+     
+    </div>
+-->
+</div>
+</div>
+<!--    End Lightbox   -->
+
+<!--    Footer   -->
+<footer class="container-fluid text-center">
+
+     <div class="row" style="padding-top: 1.5em;">
+        <div class="col-sm-4 ">
+            <ul >
+                <li><a id="footer-navigation" class="active" href="index.html">Welcome</a></li>
+                <li><a id="footer-navigation" href="What-is-Acupuncture.html">Acupuncture</a></li>
+                <li><a id="footer-navigation" href="Services.html">Services &amp; Fees</a></li>
+                <li><a id="footer-navigation" href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
+                <li><a id="footer-navigation" href="FQA.html">FAQ</a></li>
+                <li><a id="footer-navigation" href="ContactUs.html">Contact Us</a></li>
+                <li><a id="footer-navigation" href="Gallery.html">Gallery</a></li>  
+                
+            </ul>
+            <br>
+             <img class="logo-img"  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" height="200em" width="250em">
+ 
+    </div>    
+    <div class="col-sm-4 contactus-description">
+        <p>CONTACT US</p>
+        <a href="https://www.facebook.com/Lotus-Acupuncture-Clinic-1138557826256244/" title="Facebook"><i class="fab fa-facebook-square"></i></a> 
+<!--        <a href="https://www.facebook.com/Lotus-Acupuncture-Clinic-1138557826256244/" title="Youtube"><i class="fab fa-youtube"></i></a>-->
+    </div>
+    <div class="col-sm-4 ">
+        <p class="footer-loc-time-description">1308 Manhattan Blvd Suite B, Harvey, LA 70058 
+        (Across from Lowe's and Next to Pho Hoa Restaurant)<br>
+        Monday-Friday: 8:00AM - 5:00PM<br>
+        Saturday: 8:00AM - 2:00PM<br>
+        Sunday: Closed<br>
+        Call: 504-912-3456<br>
+        email: hpacupuncture123@gmail.com<br>
+        website: <a href="http://www.lotusacupuncture-clinic.com" title="Welcom Page">www.lotusacupuncture-clinic.com</a>
+    </p>
+    </div>
+</div>
+      <a href="#" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a> 
+    <div class="container text-justify">
+    <p style="color: black; font-size: 1em;" >*Disclaimer: This website does not provide medical advice. Information on this website is provided for general and informational purposes only. Lotus Acupuncture Clinic, LLC offers complementary medicine to individuals who are interested in receiving TCM (Traditional Chinese Medicine) therapies. The information is not intended to be substitute for professional medical care. We encourage you to seek and consult with appropriate, qualified medical professional for advice, treatment or diagnosis.</p>
+    </div>
+    <p >Website by HPV, 2017</p> 
+</footer>
+      
+<!--Script for Animation-->    
+<script >
+        $("document").ready(function(){
+//        annimation for .slideanim
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 500) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+            
+        });
+    function toggleBig(){
+        self.setAttribute("class",  "zoom");
+ 
+    }
+</script>
+
+<!--Script for LightBox-->
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+ 
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXl4QZ3FcLK-48lK_VvmH0CFiVg_PADM8&callback=initMap"></script>
+</body>
+</html>
