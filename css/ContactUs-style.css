@@ -6,6 +6,21 @@ body {
     box-sizing: border-box;
 }
 
+
+.card {
+    background-color: #dce4a0;
+    padding: 2em;
+    box-shadow: -2px -2px 6px #0a10143d, inset -2px -2px 6px #0a10143d;
+    box-sizing: border-box;
+}
+.card-sect {
+    background-color: #F5F5DC;
+    
+    box-sizing: border-box;
+}
+ 
+
+
 /**************** Font *************************/
 p strong{
     font-size: 1.7em;

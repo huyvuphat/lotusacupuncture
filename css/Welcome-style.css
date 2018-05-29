@@ -6,6 +6,20 @@ body {
     box-sizing: border-box;
 }
 
+
+.card {
+    background-color: #dce4a0;
+    padding: 2em;
+    box-shadow: -2px -2px 6px #0a10143d, inset -2px -2px 6px #0a10143d;
+    box-sizing: border-box;
+}
+.card-sect {
+    background-color: #F5F5DC;
+    
+    box-sizing: border-box;
+}
+ 
+
 /**************** Font *************************/
 p strong{
     font-size: 1.8em;
@@ -146,16 +160,17 @@ p strong{
 /**************** End Responsive Design *************************/
 
 /*************    Animation   ************************/
-.slideanim {visibility:hidden;}
-.slide {
+.myslide {
     /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
+    animation-name: myslide;
+    -webkit-animation-name: myslide; 
     /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
+    animation-duration: 0.6s; 
+    -webkit-animation-duration: 0.6s;
     /* Make the element visible */
-    visibility: visible; 
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+
 }
 
 
@@ -163,24 +178,24 @@ p strong{
 */
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
+@keyframes myslide {
     0% {
-        opacity: 0;
-        transform: translateY(70%);
+        opacity: 0.6;
+        transform: scale(1.1, 1.1);
     } 
     100% {
         opacity: 1;
-        transform: translateY(0%);
+        transform: scale(0%, 0%);
     } 
 }
-@-webkit-keyframes slide {
+@-webkit-keyframes myslide {
     0% {
-        opacity: 0;
-        -webkit-transform: translateX(70%);
+        opacity: 0.5;
+        -webkit-transform: scale(1.1, 1.1);
     } 
     100% {
         opacity: 1;
-        -webkit-transform: translateX(0%);
+        -webkit-transform: scale(0%, 0%);
     }
 }
 
@@ -241,8 +256,6 @@ p strong{
         border: none;
     }
 
-
-      
       .navbar-inverse .navbar-nav>.active>a{
           background-color: rgba(118, 158, 56, 2.0);
           padding-bottom: auto;
@@ -276,7 +289,7 @@ p strong{
         background: -webkit-gradient(linear, left bottom, left top, from(#e3e4b5), to(#c7e05f));
         background: -moz-linear-gradient(bottom, #e3e4b5, #c7e05f);
         background: linear-gradient(to top, #e3e4b5, #c7e05f);
- 
+
         clear: left;
          
         padding-top: 0.5em;
@@ -300,40 +313,28 @@ p strong{
 div.background-for-carousel{
     background:rgba(210, 226, 178, 3.8); 
     background-image: url("../Images/lotus-background.jpg");
-
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-/*    z-index: -100;*/
-
+ 
 }
  
-#myCarousel.carousel{
+.background-for-carousel .carousel{
     background:  rgba(210, 226, 178, 3.8); 
     margin: 0 auto;
-    padding: 0;
     max-width: 70em;    
+  
     /******* Depends on the Quality of the Image, set to appropriate width *******/    
 }
 .carousel-caption>h1{
    font-size: 2.6em;
    font-family: 'Berkshire', sans-serif;
-
 }
-.main-carousel-inner > .item {
-/*    position: relative;*/
-/*    display: none;*/
-    -webkit-transition: 0.1s ease-in-out left;
-    -moz-transition: 0.1s ease-in-out left;
-    -o-transition: 0.1s ease-in-out left;
-    transition: 0.1s ease-in-out left;
-}
+ 
 /*************    End Carousel   ************************/  
     
 /*************    Schedule   ************************/
 
- 
- 
 .schedule-container{
 background-color: #ffd990;
      background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
@@ -345,18 +346,6 @@ background-color: #ffd990;
     padding: 2em;
 }
 
-.what-acupucnture-background{
-/*    background-color: #83bcffd1;*/
-    background-color: #ffd990;
-     background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
-    background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: -o-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: linear-gradient(to top, #e1ba61, #ffebae);
-    box-shadow: -2px -2px 10px #0a10143d;
-    box-sizing: border-box;
-    padding: 2em;
-    color: black;
-}
  
 
 
@@ -376,7 +365,6 @@ background-color: #ffd990;
     font-family:  'Lobster', serif;
     color: #c56943;
     padding-bottom: 0.5em;
- 
 }
 .bold{
     font-weight: bold;
@@ -436,43 +424,40 @@ div.goal-container{
 /*************** weightlosss ************************/
 
 .weightloss-container{
-    background-color: #f8dc56; 
-    padding-top: 0;
-    box-shadow: -2px -2px 10px #0a10143d;
-    font-family: sans-serif;
-
+    display: flex;
 }
 .weightloss-container div h2{
-    font-size: 3.5em;
-    font-weight: bold;
-    padding-top: 0;
-/*    padding-bottom: 0;*/
-    margin-bottom: 0;
-    font-style: normal;
-    font-family: serif;
+    margin: 0;
+    font-size: 3.2em;
+    font-family:  'Lobster', serif;
+    color: #c56943;
+/*    padding-bottom: 0.5em;*/
 }
 .weightloss-container div div h3{
-    font-size: 1.8em;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 1em;
+    font-size: 1.6em;
     font-weight: bold;
+    text-align: center;
     
 }
 .weightloss-container div div p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     
 }
  
  
 /*************    End weightlosss   ************************/
 /*************    Customers Say   ************************/
+/*
 .customer-say-section{
     border-top-style: solid;
     border-top-width: 7px;
     border-top-color: #269426;
-/*    border-bottom-style: solid;*/
-/*    border-bottom-color: #269426;*/
-/*    border-bottom-width: 7px;*/
     background: #d4e48e;
 }
+*/
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #289b2e;

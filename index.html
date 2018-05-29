@@ -19,8 +19,64 @@
 <!--    Link Font Awaresome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 <!--    brand logo font-->
+    
+<!-- Control carousel speed -->
+ 
 </head>
 <body>
+    
+  
+<!--Script for Animation-->    
+<script>
+$(document).ready(function(){
+    $('.background-for-carousel .carousel').carousel({
+        interval:  2500,
+        wrap: true
+    });
+
+
+    $('.customer-say-section .carousel').carousel({
+        interval: false 
+    });
+    
+    // annimation for .slideanim
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) {
+             $(this).addClass("myslide");     
+        } else if(pos > winTop + 500){
+            $(this).removeClass("myslide");   //make it do again
+        }  
+      });
+    });
+    
+    //adding smooth scroll
+    // Select all links with hashes
+   
+    $('a[href*="html"')
+    // Remove links that don't actually link to anything
+      .click(function(event) {
+        if(location.pathname == this.pathname  
+           && 
+          location.hostname == this.hostname) {
+            // On-page links      
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: 0
+            }, 1000, function() {
+
+            });
+        }
+    });
+    
+})
+ 
+</script>
+    
     
 <!--    Navigation  -->
 <div class="wrapper-bg">
@@ -50,7 +106,7 @@
 
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Welcome</a></li>
+        <li class="active"><a href="index.html" >Welcome</a></li>
         <li><a href="What-is-Acupuncture.html">Acupuncture</a></li>
         <li><a href="Services.html">Services &amp; Fees</a></li>
         <li><a href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
@@ -63,10 +119,10 @@
 </nav>
 <!--   End  Navigattion  -->
     
-<!--   Carouse    -->
+<!--   Carousel    -->
     
     <div class="background-for-carousel">
-    <div id="myCarousel" class="carousel  " data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -148,7 +204,7 @@
     
     
 <!--  Welcom-->
-<div class="container-fluid  welcome-bg   ">
+<div class="container-fluid  card   ">
     <div class="row ">
               <div class="container big-font" >
   <h2 class="text-center welcome-font slideanim">Welcome to Lotus Acupuncture Clinic! </h2>
@@ -170,7 +226,7 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
    
     
  <!-- Goal --> 
-<div class="container-fluid goal-container  " style="margin: 0 auto;">
+<div class="container-fluid card-sect  " style="margin: 0 auto;">
     <div class="row additional-info">  
        <br>
     </div>    
@@ -203,11 +259,11 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
 </div>  
 <!-- ENd Goal-->
 <!-- weight loss-->   
-<div class="container-fluid weightloss-container" style="margin: 0 auto;">
-    <div class="row">
-       <h2 class="text-center">Acupuncture for Weight Loss</h2>
-        <div class="col-lg-8 col-lg-offset-2">
-            <br>
+<div class="container-fluid card weightloss-container" style="margin: 0 auto;">
+    <div class="row ">
+       <h2 class="text-center slideanim">Acupuncture for Weight Loss</h2>
+        <div class="col-lg-8 col-lg-offset-2 ">
+            
             <h3>Non-invasive, natural weight loss therapy<br></h3>
             <p>Over a quarter of the U.S. population are obese and well over 50% of diet products don’t work.<br>
             So, what about Acupuncture Weight Loss? <br>
@@ -227,8 +283,8 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
 <!-- emd weight loss-->  
 
 <!--Customers Says-->
-<div class="container-fluid customer-say-section">
-    <h2 class="text-center">Testimonials</h2>
+<div class="container-fluid card-sect customer-say-section">
+    <h2 class="text-center slideanim">Testimonials</h2>
     <div id="customerCarousel" class=" customer-carousel carousel  text-center slide">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -294,7 +350,7 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
     
 
 <!--  Schedule Container-->
-<div class="container-fluid  schedule-container  ">
+<div class="container-fluid  card">
     <div class="row ">
         <div class="col-sm-6  text-center">
             <p><strong>Schedule an Appointment<br>Call: 504-912-3456</strong></p>
@@ -353,34 +409,14 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
     </p>
     </div>
 </div>
-      <a href="#" title="To Top">
+      <a href="index.html">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a> 
     <div class="container text-justify">
     <p style="color: black; font-size: 1em;" >*Disclaimer: This website does not provide medical advice. Information on this website is provided for general and informational purposes only. Lotus Acupuncture Clinic, LLC offers complementary medicine to individuals who are interested in receiving TCM (Traditional Chinese Medicine) therapies. The information is not intended to be substitute for professional medical care. We encourage you to seek and consult with appropriate, qualified medical professional for advice, treatment or diagnosis.</p>
     </div>
-    <p >Website by HPV, 2017</p> 
+    <p >Copyright © 2018-2019 HPV, LLC. All rights reserved.</p> 
 </footer>
-    
-    
-<!--Script for Animation-->    
-        <script >
-        $("document").ready(function(){
-//        annimation for .slideanim
-        $(window).scroll(function() {
-          $(".slideanim").each(function(){
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 500) {
-              $(this).addClass("slide");
-            }
-          });
-        });
-        });
-       
-</script>
-    
     
 <!--Script for google map-->
 <script>
@@ -393,5 +429,6 @@ It is not an accident you are reading this! Visit our clinic or give us a call t
     }
 </script>
 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXl4QZ3FcLK-48lK_VvmH0CFiVg_PADM8&callback=initMap"></script>
+    
 </body>
 </html>

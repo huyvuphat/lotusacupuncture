@@ -6,6 +6,20 @@ body {
     box-sizing: border-box;
 }
 
+.card {
+    background-color: #dce4a0;
+    padding: 2em;
+    box-shadow: -2px -2px 6px #0a10143d, inset -2px -2px 6px #0a10143d;
+    box-sizing: border-box;
+}
+.card-sect {
+    background-color: #F5F5DC;
+    
+    box-sizing: border-box;
+}
+ 
+
+
 /**************** Font *************************/
 p strong{
     font-size: 1.8em;
@@ -110,16 +124,17 @@ p strong{
 
 
 /*************    Animation   ************************/
-.slideanim {visibility:hidden;}
-.slide {
+.myslide {
     /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
+    animation-name: myslide;
+    -webkit-animation-name: myslide; 
     /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
+    animation-duration: 0.6s; 
+    -webkit-animation-duration: 0.6s;
     /* Make the element visible */
-    visibility: visible; 
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+
 }
 
 
@@ -127,24 +142,24 @@ p strong{
 */
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
+@keyframes myslide {
     0% {
-        opacity: 0;
-        transform: translateY(70%);
+        opacity: 0.6;
+        transform: scale(1.1, 1.1);
     } 
     100% {
         opacity: 1;
-        transform: translateY(0%);
+        transform: scale(0%, 0%);
     } 
 }
-@-webkit-keyframes slide {
+@-webkit-keyframes myslide {
     0% {
-        opacity: 0;
-        -webkit-transform: translateX(70%);
+        opacity: 0.5;
+        -webkit-transform: scale(1.1, 1.1);
     } 
     100% {
         opacity: 1;
-        -webkit-transform: translateX(0%);
+        -webkit-transform: scale(0%, 0%);
     }
 }
 
@@ -265,13 +280,6 @@ p strong{
 
 /********  FAQ head    *************/
 
-.fqa-bg{
-    background-image: url("../Images/lotus-background.jpg");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 50px;
-}
 .fqa-header-font{
     margin: 0;
     font-size: 2em;

@@ -19,6 +19,60 @@
 <link rel="stylesheet" type="text/css" href="./css/ContactUs-style.css">   
 </head>
 <body>
+    
+
+<!--Script for Animation-->    
+<script>
+$(document).ready(function(){
+    $('.background-for-carousel .carousel').carousel({
+        interval:  2500,
+        wrap: true
+    });
+
+
+    $('.customer-say-section .carousel').carousel({
+        interval: false 
+    });
+    
+    // annimation for .slideanim
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) {
+             $(this).addClass("myslide");     
+        } else if(pos > winTop + 500){
+            $(this).removeClass("myslide");   //make it do again
+        }  
+      });
+    });
+    
+    //adding smooth scroll
+    // Select all links with hashes
+   
+    $('a[href*="html"')
+    // Remove links that don't actually link to anything
+      .click(function(event) {
+        if(location.pathname == this.pathname  
+           && 
+          location.hostname == this.hostname) {
+            // On-page links      
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: 0
+            }, 1000, function() {
+
+            });
+        }
+    });
+    
+})
+ 
+</script>
+    
+    
 <!--    Navigattion  -->
 <div class="wrapper-bg">
 <div class=" logo-area text-center">
@@ -63,7 +117,7 @@
 <!--    What is Acupuncutre   -->
 <p class="what-acupuncture-font what-acupuncture-header-bg text-center"><strong>Contact Us</strong></p>
     
-<div class="container-fluid  what-acupucnture-background slideanim-mouseenter">
+<div class="container-fluid  card">
     <div class="row ">
         <div class="col-lg-12  text-center word-wrapper">
              
@@ -124,33 +178,17 @@
     </p>
     </div>
 </div>
-  <a href="#" title="To Top">
+  <a href="ContactUs.html" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a> 
     <div class="container text-justify">
     <p style="color: black; font-size: 1em;" >*Disclaimer: This website does not provide medical advice. Information on this website is provided for general and informational purposes only. Lotus Acupuncture Clinic, LLC offers complementary medicine to individuals who are interested in receiving TMC (Traditional Chinese Medicine) therapies. The information is not intended to be substitute for professional medical care. We encourage you to seek and consult with appropriate, qualified medical professional for advice, treatment or diagnosis.</p>
     </div>
-   <p >Website by HPV, 2017</p>
+    <p >Copyright © 2018-2019 HPV, LLC. All rights reserved.</p> 
+
 </footer>
     
-    
-<!--Script for Animation-->    
-        <script >
-        $("document").ready(function(){
-//        annimation for .slideanim
-        $(window).scroll(function() {
-          $(".slideanim").each(function(){
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 500) {
-              $(this).addClass("slide");
-            }
-          });
-        });
-        });
-       
-</script>
+ 
     
 <!--Script for google map-->
 <script>
