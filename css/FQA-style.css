@@ -279,7 +279,13 @@ p strong{
 /*************    End Logo   ************************/
 
 /********  FAQ head    *************/
-
+.fqa-header{
+    background-image: url("../Images/lotus-background.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
 .fqa-header-font{
     margin: 0;
     font-size: 2em;
@@ -292,21 +298,7 @@ p strong{
       
       
   /*************    FAQ Body   ************************/
-.fqa-background{
-    background-color: #ffd990;
-    background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
-    background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: -o-linear-gradient(bottom, #e1ba61, #ffebae);
-    background: linear-gradient(to top, #e1ba61, #ffebae);
-    box-shadow: -2px -2px 10px #0a10143d;
  
-    padding-top: 3em;
-    box-shadow: -2px -2px 10px #0a10143d;
-
-    box-shadow: -2px -2px 10px #0a10143d;
-    box-sizing: border-box;
-    padding: 2em;
-}
 
 .img-display{
     max-width: 80%;
