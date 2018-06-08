@@ -373,6 +373,10 @@ background-color: #ffd990;
 
 /*************** Goal ************************/
 
+.img-circle {
+    box-shadow: -2px -2px 10px #bebea7;
+
+}
 div.goal-container{
     background-color: rgba(210, 226, 178, 3.8); 
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(210, 226, 178, 3.8)), to(rgba(118, 158, 56, 2.0)));
