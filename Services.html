@@ -17,10 +17,10 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 <!--    brand logo font-->
 <!--Link to CSS-->
-<link rel="stylesheet" type="text/css" href="./css/Services-style.css">   
+<link rel="stylesheet" type="text/css" href="./css/Services-style.css">
 </head>
 <body>
-    
+
 <script>
 $(document).ready(function(){
     $('.background-for-carousel .carousel').carousel({
@@ -30,9 +30,9 @@ $(document).ready(function(){
 
 
     $('.customer-say-section .carousel').carousel({
-        interval: false 
+        interval: false
     });
-    
+
     // annimation for .slideanim
     $(window).scroll(function() {
       $(".slideanim").each(function(){
@@ -40,23 +40,23 @@ $(document).ready(function(){
 
         var winTop = $(window).scrollTop();
         if (pos < winTop + 500) {
-             $(this).addClass("myslide");     
+             $(this).addClass("myslide");
         } else if(pos > winTop + 500){
             $(this).removeClass("myslide");   //make it do again
-        }  
+        }
       });
     });
-    
+
     //adding smooth scroll
     // Select all links with hashes
-   
+
     $('a[href*="html"')
     // Remove links that don't actually link to anything
       .click(function(event) {
-        if(location.pathname == this.pathname  
-           && 
+        if(location.pathname == this.pathname
+           &&
           location.hostname == this.hostname) {
-            // On-page links      
+            // On-page links
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
@@ -66,14 +66,14 @@ $(document).ready(function(){
             });
         }
     });
-    
+
 })
- 
+
 </script>
 <!--    Navigattion  -->
 <div class="wrapper-bg">
 <div class=" logo-area text-center">
-    <div class="row" style="height: 10em; width: 15em; margin: 0 auto;">   
+    <div class="row" style="height: 10em; width: 15em; margin: 0 auto;">
         <img class="logo-img "  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" width="100%">
     </div>
     <div class="container">
@@ -90,9 +90,9 @@ $(document).ready(function(){
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
       </button>
     </div>
 
@@ -104,16 +104,16 @@ $(document).ready(function(){
         <li><a href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
         <li><a href="FQA.html">FAQ</a></li>
         <li><a href="ContactUs.html">Contact Us</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>  
+          <li><a href="Gallery.html">Gallery</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <!--   End  Navigattion  -->
-  
+
 <!--  Service Description   -->
 <p class=" treatment-big-font what-we-treat-header text-center"><strong>Services</strong></p>
- 
+
 <div class="card   ">
 <div class="container-fluid treatment-small-font service-first-description">
     <div class="row first-row">
@@ -132,10 +132,10 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-    
+
 <div class="container-fluid treatment-small-font service-first-description">
     <div class="row first-row">
-  
+
         <div class="col-md-6     text-center">
             <span class="service-big-font text-center slideanim">CUPPING THERAPY</span>
             <br><br>
@@ -153,7 +153,7 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-    
+
 <div class="container-fluid treatment-small-font service-first-description">
     <div class="row first-row">
         <div class="col-md-6 text-center">
@@ -169,10 +169,10 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-    
+
 <div class="container-fluid treatment-small-font service-first-description">
     <div class="row first-row">
-  
+
         <div class="col-md-6   text-center">
             <span class="service-big-font text-center slideanim">ACUPRESSURE</span>
             <br><br>
@@ -200,18 +200,18 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-   
- 
-    
+
+
+
 <!--  End Service Description   -->
 <!--  Price   -->
 
 <p class="treatment-big-font what-we-treat-header text-center "><strong>Sessions &amp; Fees</strong></p>
 <div class="container price-bg ">
-    <br> 
+    <br>
   <table class="table word-wrapper price-small-font">
     <tr >
-      <td>Initial Visit – consultation and acupuncture treatment</td>
+      <td>Initial Visit – Evaluation and Acupuncture Treatment</td>
       <td>$95</td>
     </tr>
     <tr>
@@ -219,17 +219,18 @@ $(document).ready(function(){
       <td>$80</td>
     </tr>
     <tr>
+      <td >Herbal Heat Pack</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+    <tr>
       <td >Moxibustion</td>
       <td>$50</td>
     </tr>
     <tr>
       <td >NADA</td>
       <td>$20</td>
-    </tr>  
-    <tr>
-      <td >Weight Loss (belly fat)</td>
-      <td>$100/session</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Cupping</td>
       <td>$45/session</td>
@@ -256,7 +257,11 @@ $(document).ready(function(){
     </tr>
     <tr>
       <td>Facial Rejuvenation</td>
-      <td>$100/session</td>
+      <td>$100/session, 10th FREE</td>
+    </tr>
+    <tr>
+      <td >Weight Loss (belly fat)</td>
+      <td>$100/session, 10th FREE</td>
     </tr>
     <tr>
       <td class="discount">*Discount Packages for Multiple Sessions*</td>
@@ -268,16 +273,16 @@ $(document).ready(function(){
         <tr>
     <td>10 Visit Package</td>
       <td>$549</td>
- 
+
 <!--    <caption>Fee</caption>-->
 </table>
- 
+
     <h3>* We accept all major credit cards - Master, Visa, Discover, and American Express *<br>
         * All discount packages must be paid in full and are non-refundable<br></h3>
 </div>
 <!-- End Price   -->
 <p class="treatment-big-font what-we-treat-header text-center"><strong>What We Treat</strong></p>
- 
+
 <!--    What Treatments   -->
 <div class="container-fluid  treatment-background treatment-small-font card-sect">
     <div class="row what-we-treat-font">
@@ -289,16 +294,16 @@ $(document).ready(function(){
                 Migraine Headache<br>
                 Optical Headache<br>
                 Cluster Headache<br>
-                vascular Headache   
+                vascular Headache
             </p>
-                
+
             <h3>Shoulder and Hands</h3>
             <p>
                 Carpal Tunnel Syndrome<br>
                 Tennis/Golf Elbow<br>
                 Hand Pain<br>
                 Rotator Cuff Pain<br>
-                Hand Tingling<br>               
+                Hand Tingling<br>
                 Frozen Shoulder<br>
                 Shoulder Pain<br>
                 Wrist Pain
@@ -324,8 +329,8 @@ $(document).ready(function(){
                 Sore Knees<br>
                 Foot Pain
             </p>
-            
-           
+
+
             </div>
             <div class="col-sm-4 ">
             <h3>Women's Health</h3>
@@ -365,10 +370,10 @@ $(document).ready(function(){
                 Rhinitis
             </p>
             </div>
-            
+
             <div class="col-sm-4">
-            
-       
+
+
             <h3>Stress Management</h3>
             <p>
                 PTSD<br>
@@ -392,8 +397,8 @@ $(document).ready(function(){
                 Acid Reflux<br>
             </p>
 
-       
-            
+
+
             <h3>Other Disorders</h3>
             <p>
                 Obesity<br>
@@ -403,9 +408,9 @@ $(document).ready(function(){
             </p>
             </div>
       </div>
-    </div> 
+    </div>
 </div>
-  
+
 </div>
 <!--  End   Treatments   -->
 
@@ -421,22 +426,22 @@ $(document).ready(function(){
                 <li><a id="footer-navigation" href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
                 <li><a id="footer-navigation" href="FQA.html">FAQ</a></li>
                 <li><a id="footer-navigation" href="ContactUs.html">Contact Us</a></li>
-                <li><a id="footer-navigation" href="Gallery.html">Gallery</a></li>  
+                <li><a id="footer-navigation" href="Gallery.html">Gallery</a></li>
             </ul>
             <br>
              <img class="logo-img"  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" height="200em" width="250em">
- 
-    </div>    
+
+    </div>
     <div class="col-sm-4 contactus-description">
         <p>CONTACT US</p>
-       <a href="https://www.facebook.com/Lotus-Acupunture-Clinic-1913568095589655/" title="Facebook"><i class="fab fa-facebook-square"></i></a>  
+       <a href="https://www.facebook.com/Lotus-Acupunture-Clinic-1913568095589655/" title="Facebook"><i class="fab fa-facebook-square"></i></a>
 <!--        <a href="https://www.facebook.com/Lotus-Acupuncture-Clinic-1138557826256244/" title="Youtube"><i class="fab fa-youtube"></i></a>-->
     </div>
     <div class="col-sm-4 ">
-       <p class="footer-loc-time-description">1308 Manhattan Blvd Suite B, Harvey, LA 70058 
+       <p class="footer-loc-time-description">1308 Manhattan Blvd Suite B, Harvey, LA 70058
         (Across from Lowe's and Next to Pho Hoa Restaurant)<br>
         Monday-Friday: 8:00AM - 5:00PM<br>
-        Saturday: 8:00AM - 2:00PM<br>
+        Saturday: 9:00AM - 2:00PM<br>
         Sunday: Closed<br>
         Call: 504-912-3456<br>
         email: hpacupuncture123@gmail.com<br>
@@ -446,13 +451,13 @@ $(document).ready(function(){
 </div>
     <a href="Services.html" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
-    </a> 
+    </a>
     <div class="container text-justify">
     <p style="color: black; font-size: 1em;" >*Disclaimer: This website does not provide medical advice. Information on this website is provided for general and informational purposes only. Lotus Acupuncture Clinic, LLC offers complementary medicine to individuals who are interested in receiving TMC (Traditional Chinese Medicine) therapies. The information is not intended to be substitute for professional medical care. We encourage you to seek and consult with appropriate, qualified medical professional for advice, treatment or diagnosis.</p>
     </div>
-     <p >Copyright © 2018-2019 HPV, LLC. All rights reserved.</p> 
+     <p >Copyright © 2018-2019 HPV, LLC. All rights reserved.</p>
 </footer>
 
-  
+
 </body>
 </html>

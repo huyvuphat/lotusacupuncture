@@ -16,12 +16,12 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 <!--    brand logo font-->
 <!--Link to CSS-->
-<link rel="stylesheet" type="text/css" href="./css/Meet-Dr-Vu-Style.css">   
+<link rel="stylesheet" type="text/css" href="./css/Meet-Dr-Vu-Style.css">
 </head>
 <body>
-    
 
-<!--Script for Animation-->    
+
+<!--Script for Animation-->
 <script>
 $(document).ready(function(){
     $('.background-for-carousel .carousel').carousel({
@@ -31,9 +31,9 @@ $(document).ready(function(){
 
 
     $('.customer-say-section .carousel').carousel({
-        interval: false 
+        interval: false
     });
-    
+
     // annimation for .slideanim
     $(window).scroll(function() {
       $(".slideanim").each(function(){
@@ -41,23 +41,23 @@ $(document).ready(function(){
 
         var winTop = $(window).scrollTop();
         if (pos < winTop + 500) {
-             $(this).addClass("myslide");     
+             $(this).addClass("myslide");
         } else if(pos > winTop + 500){
             $(this).removeClass("myslide");   //make it do again
-        }  
+        }
       });
     });
-    
+
     //adding smooth scroll
     // Select all links with hashes
-   
+
     $('a[href*="html"')
     // Remove links that don't actually link to anything
       .click(function(event) {
-        if(location.pathname == this.pathname  
-           && 
+        if(location.pathname == this.pathname
+           &&
           location.hostname == this.hostname) {
-            // On-page links      
+            // On-page links
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
@@ -67,14 +67,14 @@ $(document).ready(function(){
             });
         }
     });
-    
+
 })
- 
+
 </script>
 <!--    Navigattion  -->
 <div class="wrapper-bg">
 <div class=" logo-area text-center">
-    <div class="row" style="height: 10em; width: 15em; margin: 0 auto;">   
+    <div class="row" style="height: 10em; width: 15em; margin: 0 auto;">
         <img class="logo-img "  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" width="100%">
     </div>
     <div class="container">
@@ -91,9 +91,9 @@ $(document).ready(function(){
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-         
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
       </button>
     </div>
 
@@ -105,32 +105,32 @@ $(document).ready(function(){
         <li class="active"><a href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
         <li><a href="FQA.html">FAQ</a></li>
         <li><a href="ContactUs.html">Contact Us</a></li>
-       <li><a  href="Gallery.html">Gallery</a></li>  
+       <li><a  href="Gallery.html">Gallery</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <!--   End  Navigattion-->
-     
+
 <!--    About Dr. Henry Vu   -->
 <p class="meet-dr-big-font meet-dr-header text-center"><strong>Meet Doctor Vu</strong></p>
 <div class="container-fluid  card  ">
     <div class="row ">
         <div class="col-lg-6  text-center word-wrapper">
-  
-            <p class="big-font text text-left">  
+
+            <p class="big-font text text-left">
 Henry T. Vu is an acupuncturist practicing TCM (Traditional Chinese Medicine).   He attended TCM University for Healing Acupuncture and Integrative Medicine in Vietnam and graduated in 1998.  After graduating from college, he opened and operated a clinic (practicing various modalities within TCM) and herbal apothecary where he prescribed and dispensed Oriental Medicine.  He also attended South Baylo University in Anaheim, California and earned his Master’s degree in Acupuncture and Oriental Medicine.  He went further and achieved Doctorate degree for Acupuncture and Oriental Medicine (DAOM).  Along the way, he earned his Master of Science and Oriental Medicine degree (MSAOM) and was awarded for Excellence in Clinical Internship.  He earned his certification and completed Zhu’s Scalp Acupuncture program for Stroke, Spinal Cord Injuries, Emergency, Internal, Psychiatric Disorder and Special Senses.  He is both Board Certified Licensed Acupuncturist in the State of Louisiana and California.<br><br>  Henry has long, deep passion for TCM-holistic health and Oriental Medicine.  He has treated thousands of people with pain, acute and chronic illness, and host of other ailments and dis-eases.  With his love for TCM, healing, and his heart is in the “right place”; it is profoundly rewarding for him to be able to restore health and balance, and help people have better quality of life.  As a patient of Dr. Vu, you’ll notice his expertise, warm, caring, genuine, and gentle nature which will put you at ease.  Be assured that you are in good hands as restoring your health and well-being is his main goal.<br><br>
 Dr. Vu is currently practicing at his private practice on the Westbank of New Orleans.  He serves the community as a volunteer mentor, NADA member, and donates his services and money to several local organizations.  He specializes in Auricular  Acupuncture, Scalp Acupuncture – Herbology, Meridian Acupressure and Tui Na massage, Cupping, Five Element Acupuncture, Balance Method Acupuncture, Four needle technique and Tai Chi. The use of each of these skills support weight loss, smoking cessation, facial rejuvenation and so much more.
 </p>
         </div>
-       
- 
+
+
         <div class="col-lg-6 text-center">
             <img class ="img-display" src="./Images/hinh%20Hieu%20Vu.jpg" title="Dr. Vu">
         </div>
- 
+
     </div>
-</div> 
+</div>
 <!--  End  About Dr. Henry Vu   -->
 
 <!--    Footer   -->
@@ -145,22 +145,22 @@ Dr. Vu is currently practicing at his private practice on the Westbank of New Or
                 <li><a id="footer-navigation" href="Meet-Dr-Vu.html">Meet Doctor Vu</a></li>
                 <li><a id="footer-navigation" href="FQA.html">FAQ</a></li>
                 <li><a id="footer-navigation" href="ContactUs.html">Contact Us</a></li>
-                <li><a id="footer-navigation" href="Gallery.html">Gallery</a></li>  
+                <li><a id="footer-navigation" href="Gallery.html">Gallery</a></li>
             </ul>
             <br>
              <img class="logo-img"  src="./Images/logoNew.gif" onerror="this.onerror=null; this.src='lotus logo.png'" height="200em" width="250em">
- 
-    </div>    
+
+    </div>
     <div class="col-sm-4 contactus-description">
         <p>CONTACT US</p>
-        <a href="https://www.facebook.com/Lotus-Acupunture-Clinic-1913568095589655/" title="Facebook"><i class="fab fa-facebook-square"></i></a> 
+        <a href="https://www.facebook.com/Lotus-Acupunture-Clinic-1913568095589655/" title="Facebook"><i class="fab fa-facebook-square"></i></a>
 <!--        <a href="https://www.facebook.com/Lotus-Acupuncture-Clinic-1138557826256244/" title="Youtube"><i class="fab fa-youtube"></i></a>-->
     </div>
     <div class="col-sm-4 ">
-       <p class="footer-loc-time-description">1308 Manhattan Blvd Suite B, Harvey, LA 70058 
+       <p class="footer-loc-time-description">1308 Manhattan Blvd Suite B, Harvey, LA 70058
         (Across from Lowe's and Next to Pho Hoa Restaurant)<br>
         Monday-Friday: 8:00AM - 5:00PM<br>
-        Saturday: 8:00AM - 2:00PM<br>
+        Saturday: 9:00AM - 2:00PM<br>
         Sunday: Closed<br>
         Call: 504-912-3456<br>
         email: hpacupuncture123@gmail.com<br>
@@ -170,13 +170,13 @@ Dr. Vu is currently practicing at his private practice on the Westbank of New Or
 </div>
   <a href="Meet-Dr-Vu.html" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
-    </a> 
+    </a>
     <div class="container text-justify">
     <p style="color: black; font-size: 1em;" >*Disclaimer: This website does not provide medical advice. Information on this website is provided for general and informational purposes only. Lotus Acupuncture Clinic, LLC offers complementary medicine to individuals who are interested in receiving TMC (Traditional Chinese Medicine) therapies. The information is not intended to be substitute for professional medical care. We encourage you to seek and consult with appropriate, qualified medical professional for advice, treatment or diagnosis.</p>
     </div>
      <p >Copyright © 2018-2019 HPV, LLC. All rights reserved.</p>
 </footer>
-    
-    
+
+
 </body>
 </html>
