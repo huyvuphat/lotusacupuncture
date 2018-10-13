@@ -99,7 +99,9 @@ p strong{
         .logo-description>p{
             font-size: 3.5em !important;
         }
-        
+        .card { 
+            padding: 0;
+        }
      }
 
 /* Smartphones (portrait) ----------- */
