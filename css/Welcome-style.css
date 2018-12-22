@@ -369,6 +369,39 @@ background-color: #ffd990;
 .bold{
     font-weight: bold;
 }
+
+/*************** Discount ************************/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Lobster+Two|Patua+One|Prata');
+
+.discount-banner{
+    background-image: url(../Images/red-lines-background.jpg);
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    
+    font-family: 'Abril Fatface', 'Great Vibes', 'Lobster Two', 'Patua One','Prata';
+}
+    
+.discount-banner > h1{
+    font-size: 4em;
+}
+
+.discount-banner > p{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px)  {
+    .discount-banner > h1{
+        font-size: 2em !important;
+    }
+    .discount-banner > p{
+        font-size: 1em;
+    }
+}
+
+
+/*************** End Discount ************************/
  
 
 /*************** Goal ************************/
@@ -578,10 +611,14 @@ footer ul li{
 
 .footer-loc-time-description{
     font-weight: 100;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-family: serif;
     color: #6d0808;
 }
+
+
+ 
+
 /************************* End Footer *****************/
 
 </style>
