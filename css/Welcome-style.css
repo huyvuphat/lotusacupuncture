@@ -1,4 +1,5 @@
 <style>  
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Lobster+Two|Patua+One|Prata');
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 body {
     background-color: white; 
@@ -371,7 +372,7 @@ background-color: #ffd990;
 }
 
 /*************** Discount ************************/
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Lobster+Two|Patua+One|Prata');
+
 
 .discount-banner{
     background-image: url(../Images/red-lines-background.jpg);
