@@ -53,7 +53,7 @@ p strong{
 
 }
       
-@media screen and (min-width: 768px) and (max-width:948px) {
+@media screen and (min-width: 768px) and (max-width:1000px) {
 /* Change Breakpoint for nav*/
    .navbar-header {
         float: none;
@@ -524,15 +524,43 @@ footer ul li{
     font-size: 2em;
 }
 
+
+/*************Font Awesome******/
+.big-font-fa{
+    font-size: 7.2em;
+    padding: 10px;
+    margin: 5px;
+}
+.small-font-fa{
+    font-size: 3.2em;
+    padding: 10px;
+    margin: 5px;
+}
+.fa-phone-square{
+    color: #3e901f;
+}
+.fa-phone-square:hover, .fa-phone-square:focus{
+    transform: scale(1.2);
+    color: #579e3c;
+}
+
+.fa-envelope-square{
+    color: #4877c1;
+}
+.fa-envelope-square:hover, fa-envelope-square:focus{
+    transform: scale(1.2);
+    color: #2871e4;
+}
 .fa-facebook-square{
-    font-size: 2.2em;
     color: #1c3b84;
-    padding: 0 3px;
+ 
 }
 .fa-facebook-square:hover, .fa-facebook-square:focus{
-    font-size: 2.5em;
-    color: #3963c5;
+    transform: scale(1.2);
+    color: #42578a;
 }
+ 
+/************ ENd Font Awesome******/
 .fa-youtube{
     font-size: 2.2em;
     color: #ad1d1d;

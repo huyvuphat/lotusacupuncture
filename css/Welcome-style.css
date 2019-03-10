@@ -68,7 +68,7 @@ p strong{
 
 }
       
-@media screen and (min-width: 768px) and (max-width:948px) {
+@media screen and (min-width: 768px) and (max-width:1000px) {
 /* Change Breakpoint for nav*/
    .navbar-header {
         float: none;
@@ -347,8 +347,42 @@ background-color: #ffd990;
     padding: 2em;
 }
 
- 
+/*************Font Awesome******/
+.big-font-fa{
+    font-size: 7.2em;
+    padding: 10px;
+    margin: 5px;
+}
+.small-font-fa{
+    font-size: 3.2em;
+    padding: 10px;
+    margin: 5px;
+}
+.fa-phone-square{
+    color: #3e901f;
+}
+.fa-phone-square:hover, .fa-phone-square:focus{
+    transform: scale(1.2);
+    color: #579e3c;
+}
 
+.fa-envelope-square{
+    color: #4877c1;
+}
+.fa-envelope-square:hover, fa-envelope-square:focus{
+    transform: scale(1.2);
+    color: #2871e4;
+}
+.fa-facebook-square{
+    color: #1c3b84;
+ 
+}
+.fa-facebook-square:hover, .fa-facebook-square:focus{
+    transform: scale(1.2);
+    color: #42578a;
+}
+ 
+/************ ENd Font Awesome******/
 
 /*************  End  Schedule   ************************/
 
@@ -457,50 +491,47 @@ div.goal-container{
  
 /*************    End weightlosss   ************************/
 /*************    Customers Say   ************************/
-/*
-.customer-say-section{
-    border-top-style: solid;
-    border-top-width: 7px;
-    border-top-color: #269426;
-    background: #d4e48e;
+.customer-say-section .container{
+    font-size: 1.2em;
+    font-family: sans-serif;
 }
-*/
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #289b2e;
+.customer-say-section > h2{
+    font-size: 2.5em;
+    font-family: sans-serif;
 }
-
-.carousel-indicators li {
-    border-color: #289b2e;
-}
-
-.carousel-indicators li.active {
-    background-color: #289b2e;
-}
-
-.item h4 {
-    font-size: 1.4em;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
+.collapsible-btn {
+  background-color: #c15d58;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: none;
+  text-align: center;
+  outline: none;
+  align-content: center;
 }
 
-.item span {
-    font-style: normal;
+.collapse-active, .collapsible-btn:hover {
+  background-color: #d28884;
 }
 
- 
-.customer-say-section>h2{
-    font-size: 3.5em;
-    font-family: serif;
-    font-weight: bold;
-    padding-top: 0.5em;
-/*    padding-bottom: 0;*/
-    margin-bottom: 0;
-        font-style: normal;
+.collapsible-btn:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 2px;
 }
 
+.collapse-active:after {
+  content: "\2212";
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
  
 /************* End Customers Say   ************************/
 
@@ -550,15 +581,7 @@ footer ul li{
     font-size: 2em;
 }
 
-.fa-facebook-square{
-    font-size: 2.2em;
-    color: #1c3b84;
-    padding: 0 3px;
-}
-.fa-facebook-square:hover, .fa-facebook-square:focus{
-    font-size: 2.5em;
-    color: #3963c5;
-}
+
 .fa-youtube{
     font-size: 2.2em;
     color: #ad1d1d;
