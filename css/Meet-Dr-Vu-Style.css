@@ -1,7 +1,7 @@
-<style>  
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */
 body {
-    background-color: white; 
+    background-color: white;
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -14,10 +14,10 @@ body {
 }
 .card-sect {
     background-color: #F5F5DC;
-    
+
     box-sizing: border-box;
 }
- 
+
 
 
 /**************** Font *************************/
@@ -31,7 +31,7 @@ p strong{
       line-height: 1.5em;
 }
 
- 
+
 /*font-family: 'Lobster', cursive;*/
 
 
@@ -39,15 +39,15 @@ p strong{
 
 
 /**************** Responsive Design *************************/
- 
+
 @media screen and (min-width: 948px) and (max-width:1368px) {
         .logo-description>p{
             font-size: 6em !important;
-             
+
         }
-      
+
 }
-      
+
 @media screen and (min-width: 768px) and (max-width:1000px) {
 /* Change Breakpoint for nav*/
    .navbar-header {
@@ -85,14 +85,14 @@ p strong{
   		display:block !important;
 	}
 /* Change Breakpoint for nav*/
-  
+
 }
 
     @media screen and  (min-width: 420px) and (max-width: 768px){
         .logo-description>p{
             font-size: 3.5em !important;
         }
-    
+
      }
 
 /* Smartphones (portrait) ----------- */
@@ -101,7 +101,7 @@ p strong{
     .logo-description>p{
         font-size: 2.5em !important;
     }
- 
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -109,11 +109,11 @@ p strong{
     .logo-description>p{
         font-size: 2.5em !important;
     }
-    
+
     .big-font{
-        font-size: 1.2em;   
+        font-size: 1.2em;
     }
- 
+
 }
 /**************** End Responsive Design *************************/
 
@@ -121,9 +121,9 @@ p strong{
 .myslide {
     /* The name of the animation */
     animation-name: myslide;
-    -webkit-animation-name: myslide; 
+    -webkit-animation-name: myslide;
     /* The duration of the animation */
-    animation-duration: 0.6s; 
+    animation-duration: 0.6s;
     -webkit-animation-duration: 0.6s;
     /* Make the element visible */
     animation-iteration-count: 2;
@@ -140,17 +140,17 @@ p strong{
     0% {
         opacity: 0.6;
         transform: scale(1.1, 1.1);
-    } 
+    }
     100% {
         opacity: 1;
         transform: scale(0%, 0%);
-    } 
+    }
 }
 @-webkit-keyframes myslide {
     0% {
         opacity: 0.5;
         -webkit-transform: scale(1.1, 1.1);
-    } 
+    }
     100% {
         opacity: 1;
         -webkit-transform: scale(0%, 0%);
@@ -174,16 +174,16 @@ p strong{
     .navbar-header{ /* Button area symbol */
         border-style: none;
         background-color: #c7df60;
-    } 
- 
+    }
+
 /*    Style of Buttons    */
     .navbar-inverse .navbar-nav>li>a{
         text-align: center;
         font: normal bold 1.5em arial;      /*Font of the words*/
         color: #474812;
     }
- 
- 
+
+
     nav ul li a:hover {
         background: #70BA16;
         background: -webkit-gradient(linear, left bottom, left top, from(#70BA16), to(#70BA16));
@@ -196,18 +196,18 @@ p strong{
         background: -moz-linear-gradient(bottom, #EBD73F, #EBD73F);
         background: linear-gradient(to bottom, #EBD73F, #EBD73F);
       }
-    
-      
+
+
 /*     Color of the button box*/
       button.navbar-toggle, button.navbar-toggle:hover, button.navbar-toggle:checked, button.navbar-toggle:default{
           background-color: #58a758;
           border: none;
-          
+
       }
-      
+
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background-color: #70ba16c7; /* change color of the toggle */
- 
+
     }
 
      .navbar-collapse, .navbar-form {
@@ -215,27 +215,27 @@ p strong{
     }
 
 
-      
+
       .navbar-inverse .navbar-nav>.active>a{
           background-color: rgba(118, 158, 56, 2.0);
           padding-bottom: auto;
           background-color: none;
-  
+
       }
-      
+
       .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
           background-color: rgba(118, 158, 56, 2.0);    /*Change color when hover over the button*/
       }
-  
+
       div#myNavbar.navbar-collapse.collapse.in{
             background: #eef2b8aa;      /* Background of the collapsed area */
-      
+
       }
 /*************    End Navigation Bar   ************************/
-    
 
-   
-      
+
+
+
 /*************    Logo   ************************/
 .wrapper-bg{
     background-color: #c7df60;
@@ -245,22 +245,22 @@ p strong{
         background: -webkit-gradient(linear, left bottom, left top, from(#e3e4b5), to(#c7e05f));
         background: -moz-linear-gradient(bottom, #e3e4b5, #c7e05f);
         background: linear-gradient(to top, #e3e4b5, #c7e05f);
- 
+
         clear: left;
-         
+
         padding-top: 0.5em;
       }
- 
- 
-    .logo-description>p{  
+
+
+    .logo-description>p{
         font-size: 5em;
         font-family: 'Kaushan Script', 'Berkshire Swash', sans-serif;
         color: #c56943;
-    }     
-      
+    }
+
 /*************    End Logo   ************************/
-      
-      
+
+
   /*************    Meet Dr. Vu   ************************/
 /**header**/
 .meet-dr-big-font{
@@ -278,7 +278,7 @@ p strong{
     padding: 50px;
 }
 /** Endheader**/
-.doctor-vu-background{ 
+.doctor-vu-background{
     background-color: #ffd990;
     background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#ffebae));
     background: -moz-linear-gradient(bottom, #e1ba61, #ffebae);
@@ -295,7 +295,7 @@ p strong{
     max-height: 50em;
 /*    margin-top: 10em;*/
 /*    margin-bottom: auto;*/
- 
+
 /*    border-radius: 10%;*/
 /*    border: 1px solid white;*/
 /*    padding: 9px;*/
@@ -307,9 +307,17 @@ p strong{
 .img-display:hover {
     box-shadow: 0 0 5px 3px rgba(0, 140, 186, 0.5);
 }
+.display-small-wrapper{
+  display: flex;
+margin: 2em auto;
+     width: 31em;
+}
+ .img-display-small{
+    width: 10em;
+    height: 10em;
+    border-radius: 79em;
+ }
 
- 
- 
 .meet-doctor-font{
     margin: 0;
     font-size: 2em;
@@ -335,7 +343,7 @@ footer{
     border-top-color: #91d091f0;
 }
 .glyphicon-chevron-up{
-    
+
     color: #839f3f;
     font-size: 1.5em;
 }
@@ -395,13 +403,13 @@ footer ul li{
 }
 .fa-facebook-square{
     color: #1c3b84;
- 
+
 }
 .fa-facebook-square:hover, .fa-facebook-square:focus{
     transform: scale(1.2);
     color: #42578a;
 }
- 
+
 /************ ENd Font Awesome******/
 .fa-youtube{
     font-size: 2.2em;
@@ -413,7 +421,7 @@ footer ul li{
     font-size: 2.5em;
     color: #d14949;
 }
- 
+
 #linkin{
     color: #152388;
 /*    text-decoration: underline;*/
