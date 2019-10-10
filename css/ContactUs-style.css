@@ -1,7 +1,7 @@
-<style>  
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */
 body {
-    background-color: white; 
+    background-color: white;
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -15,10 +15,10 @@ body {
 }
 .card-sect {
     background-color: #F5F5DC;
-    
+
     box-sizing: border-box;
 }
- 
+
 
 
 /**************** Font *************************/
@@ -32,29 +32,29 @@ p strong{
 /*    line-height: 1.5em;*/
 }
 
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');  
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 /*      font-family: 'Slabo 27px', serif; */
- 
+
 /*font-family: 'Lobster', cursive;*/
 
 
 /**************** End Font *************************/
 
 /**************** Responsive Design *************************/
- 
+
 @media screen and (min-width: 948px) and (max-width:1368px) {
         .logo-description>p{
             font-size: 6em !important;
-             
+
         }
-  
-   
-    #myCarousel.carousel{ 
-        max-width: 60em !important;    
-        /******* Depends on the Quality of the Image, set to appropriate width *******/    
+
+
+    #myCarousel.carousel{
+        max-width: 60em !important;
+        /******* Depends on the Quality of the Image, set to appropriate width *******/
     }
 }
-      
+
 @media screen and (min-width: 768px) and (max-width:1000px) {
 /* Change Breakpoint for nav*/
    .navbar-header {
@@ -92,18 +92,18 @@ p strong{
   		display:block !important;
 	}
 /* Change Breakpoint for nav*/
- 
+
 }
 
     @media screen and  (min-width: 420px) and (max-width: 768px){
          .schedule-container{
-                padding: 0em 0em;   
+                padding: 0em 0em;
          }
-        
+
         .logo-description>p{
             font-size: 3.5em !important;
         }
-   
+
      }
 
 /* Smartphones (portrait) ----------- */
@@ -112,7 +112,7 @@ p strong{
     .logo-description>p{
         font-size: 2.5em !important;
     }
- 
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -127,9 +127,9 @@ p strong{
         width: 12em;
     }
     .big-font{
-        font-size: 1em;   
+        font-size: 1em;
     }
- 
+
 }
 /**************** End Responsive Design *************************/
 
@@ -139,12 +139,12 @@ p strong{
 .slide {
     /* The name of the animation */
     animation-name: slide;
-    -webkit-animation-name: slide; 
+    -webkit-animation-name: slide;
     /* The duration of the animation */
-    animation-duration: 1s; 
+    animation-duration: 1s;
     -webkit-animation-duration: 1s;
     /* Make the element visible */
-    visibility: visible; 
+    visibility: visible;
 }
 
 
@@ -156,17 +156,17 @@ p strong{
     0% {
         opacity: 0;
         transform: translateY(70%);
-    } 
+    }
     100% {
         opacity: 1;
         transform: translateY(0%);
-    } 
+    }
 }
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
         -webkit-transform: translateX(70%);
-    } 
+    }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
@@ -190,16 +190,16 @@ p strong{
     .navbar-header{ /* Button area symbol */
         border-style: none;
         background-color: #c7df60;
-    } 
- 
+    }
+
 /*    Style of Buttons    */
     .navbar-inverse .navbar-nav>li>a{
         text-align: center;
         font: normal bold 1.5em arial;      /*Font of the words*/
         color: #474812;
     }
- 
- 
+
+
     nav ul li a:hover {
         background: #70BA16;
         background: -webkit-gradient(linear, left bottom, left top, from(#70BA16), to(#70BA16));
@@ -212,18 +212,18 @@ p strong{
         background: -moz-linear-gradient(bottom, #EBD73F, #EBD73F);
         background: linear-gradient(to bottom, #EBD73F, #EBD73F);
       }
-    
-      
+
+
 /*     Color of the button box*/
       button.navbar-toggle, button.navbar-toggle:hover, button.navbar-toggle:checked, button.navbar-toggle:default{
           background-color: #58a758;
           border: none;
-          
+
       }
-      
+
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background-color: #70ba16c7; /* change color of the toggle */
- 
+
     }
 
      .navbar-collapse, .navbar-form {
@@ -231,23 +231,23 @@ p strong{
     }
 
 
-      
+
       .navbar-inverse .navbar-nav>.active>a{
           background-color: rgba(118, 158, 56, 2.0);
           padding-bottom: auto;
           background-color: none;
-  
+
       }
-      
+
       .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
           background-color: rgba(118, 158, 56, 2.0);    /*Change color when hover over the button*/
       }
-  
+
       div#myNavbar.navbar-collapse.collapse.in{
             background: #eef2b8aa;      /* Background of the collapsed area */
-      
+
       }
- 
+
      /* style for the small word logo*/
 /*
         .navbar-brand{
@@ -258,14 +258,14 @@ p strong{
             color: #292d0a;
         }
 */
- 
 
-     
+
+
 /*************    End Navigation Bar   ************************/
-    
 
-   
-      
+
+
+
 /*************    Logo   ************************/
 .wrapper-bg{
     background-color: #c7df60;
@@ -275,22 +275,22 @@ p strong{
         background: -webkit-gradient(linear, left bottom, left top, from(#e3e4b5), to(#c7e05f));
         background: -moz-linear-gradient(bottom, #e3e4b5, #c7e05f);
         background: linear-gradient(to top, #e3e4b5, #c7e05f);
- 
+
         clear: left;
-         
+
         padding-top: 0.5em;
       }
- 
- 
-    .logo-description>p{  
+
+
+    .logo-description>p{
         font-size: 5em;
         font-family: 'Kaushan Script', 'Berkshire Swash', sans-serif;
         color: #c56943;
     }
-      
+
 /*************    End Logo   ************************/
-      
-      
+
+
 /*************    What is Acupuncture   ************************/
 /*header*/
 .what-acupuncture-header-bg{
@@ -327,7 +327,7 @@ p strong{
     border-radius: 50%;
     box-shadow: 0 3px 5px 2px #858484;
 }
- 
+
 
 
 .acupucnture-def-img:hover {
@@ -347,6 +347,197 @@ p strong{
 }
 /*************    End What is Acupuncture   ************************/
 
+
+
+/*************    Gallery   ************************/
+.header-bg{
+    background-image: url("../Images/lotus-background.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+.header-font{
+    margin: 0;
+    font-size: 2em;
+    font-family:  'Lobster', serif;
+    color: #b733a8;
+/*    text-shadow:  0 0 0.9em #819c3e;*/
+}
+/*End header*/
+.gallery-background{
+/*    background-color: #83bcffd1;*/
+
+    background-color: #ffd990;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e1ba61), to(#c9a643));
+    background: -moz-linear-gradient(bottom, #e1ba61, #c9a643);
+    background: -o-linear-gradient(bottom, #e1ba61, #c9a643);
+    background: linear-gradient(to top, #e1ba61, #c9a643);
+
+    box-shadow: -5px -5px 15px 2px #c4bcbc
+    box-sizing: border-box;
+    padding:1em;
+    color: black;
+}
+
+.images-container{
+/*    padding-top: 0.5em;*/
+    padding-bottom: 0.5em;
+}
+
+a img{
+    margin-top: 2em;
+    min-width: 50em
+    box-shadow: 3px 3px 9px 2px rgba(128, 128, 128, 0.27);
+}
+
+
+
+a img:hover {
+    -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+    -moz-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+    filter: brightness(80%);
+     -webkit-animation: bigger  0.5s; /* Safari 4.0 - 8.0 */
+    -moz-animation: bigger  0.5s; /* Safari 4.0 - 8.0 */
+    animation: bigger 0.5s;
+}
+a img:active{
+
+     -webkit-animation: Xbigger  0.5s; /* Safari 4.0 - 8.0 */
+    -moz-animation: Xbigger  0.5s; /* Safari 4.0 - 8.0 */
+    animation: Xbigger 0.5s;
+    z-index: 500;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+@-moz-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+/* Standard syntax */
+@keyframes bigger {
+   from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+@-webkit-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+@-moz-keyframes bigger {
+    from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+/* Standard syntax */
+@keyframes bigger {
+   from{transform: scale(1);}
+    to{transform: scale(1.02)}
+}
+
+.img-wrapper{
+    position: sticky;
+    top: 100px;
+}
+
+
+
+.duplicate-container{
+    visibility: hidden;
+    margin: -13em;
+}
+
+
+.video div{
+     padding: 2em;
+}
+
+/**********MODAL *****************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.zoom-pic {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    z-index: 500;
+/*    margin: auto;*/
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(2)}
+}
+
+/* The Close Button */
+/*
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 500;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .zoom-pic {
+        width: 100%;
+
+    }
+}
+/*************    End Gallery   ************************/
+
 /************************* Footer *****************/
 footer{
     background-color: #8dca8d;
@@ -356,7 +547,7 @@ footer{
     border-top-color: #91d091f0;
 }
 .glyphicon-chevron-up{
-    
+
     color: #839f3f;
     font-size: 1.5em;
 }
@@ -415,13 +606,13 @@ footer ul li{
 }
 .fa-facebook-square{
     color: #1c3b84;
- 
+
 }
 .fa-facebook-square:hover, .fa-facebook-square:focus{
     transform: scale(1.2);
     color: #42578a;
 }
- 
+
 /************ ENd Font Awesome******/
 .fa-youtube{
     font-size: 2.2em;
@@ -433,7 +624,7 @@ footer ul li{
     font-size: 2.5em;
     color: #d14949;
 }
- 
+
 #linkin{
     color: #152388;
 /*    text-decoration: underline;*/
